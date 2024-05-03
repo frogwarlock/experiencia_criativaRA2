@@ -1,0 +1,9 @@
+{% extends "base1.html" %} 
+{% block content %}
+    <h1>Usuários</h1>
+    <ul>
+        {% for user, password in devices.items() %}
+            <li>Usuário: {{ user }}, Senha: {{ password }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

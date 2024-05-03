@@ -1,0 +1,10 @@
+
+{% extends"devicesBase.html"%}
+{% block content %}
+<h1>Interruptor </h1>
+<ul>
+    {% for key, value in inter.items()%}
+    <li>{{ key }}: {{ value }} </li>
+    {% endfor %}
+</ul>
+{% endblock %}

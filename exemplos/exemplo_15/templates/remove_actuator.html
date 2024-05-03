@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <form action="/del_actuator" method="post">
+      <select name="atuadores" class="Input">
+        {% for key in devices %}
+        <option>{{ key }}</option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="Deletar" />
+    </form>
+    <p> Voltar para a <a href="/home">página inicial</a>!</p>
+  </body>
+</html>

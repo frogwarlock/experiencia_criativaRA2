@@ -1,0 +1,11 @@
+<html>
+        <body>
+            <h1>Sensor de Umidade </h1>
+            <ul>
+                {% for key, value in sensor.items()%}
+                <li>{{ key }}: {{ value }} </li>
+            {% endfor %}
+            </ul>
+            <p> Voltar para a <a href="/">página inicial</a>!</p>
+        </body>
+    </html>

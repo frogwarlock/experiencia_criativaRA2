@@ -1,0 +1,9 @@
+{% extends"base1.html"%}
+{% block content %}
+<h1> ATUADORES </h1>
+<ul>
+    {% for item in devices%}
+        <li> {{ item }} </li>
+    {% endfor %}
+</ul>
+{% endblock %}

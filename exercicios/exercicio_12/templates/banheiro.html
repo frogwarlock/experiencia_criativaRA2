@@ -1,0 +1,9 @@
+{% extends"roomBase.html"%}
+{% block content %}
+<h1> Banheiro </h1>
+<ul>
+    {% for item in devices %}
+        <li><a href="/{{item}}">{{item}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

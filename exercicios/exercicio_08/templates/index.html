@@ -1,0 +1,12 @@
+<html>
+    <head>Casa</head>
+    <body>
+        <h2> Minha Casa </h2>
+        <h3> Acesse o menu: </h3>
+        <ul>
+            {% for item in spaces %}
+                <li><a href="/{{item}}">{{item}}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

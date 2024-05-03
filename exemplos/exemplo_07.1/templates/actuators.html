@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1> Atuadores </h1>
+        <ul>
+            {% for item in atuador %}
+                <li> {{ item }}: {{ atuador[item] }}</li>
+            {% endfor %}
+            {% if atuador['Lâmpada'] == 1 %}
+                <li>Lâmpada Ligada!</li>
+            {% else %}
+                <li> Lâmpada Desligada </li>
+            {% endif %}
+        </ul>
+        <p> Voltar para a <a href="/">página inicial</a>!</p>
+    </body>
+</html>

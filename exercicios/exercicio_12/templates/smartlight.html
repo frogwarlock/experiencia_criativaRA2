@@ -1,0 +1,9 @@
+{% extends"devicesBase.html"%}
+{% block content %}
+    <h1>Lâmpada Inteligente </h1>
+    <ul>
+        {% for key, value in smartlight.items()%}
+        <li>{{ key }}: {{ value }} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

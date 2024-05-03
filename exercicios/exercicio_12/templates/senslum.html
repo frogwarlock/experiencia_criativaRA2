@@ -1,0 +1,10 @@
+
+{% extends"devicesBase.html"%}
+{% block content %}
+<h1> Sensor Luminosidade </h1>
+    <ul>
+        {% for key, value in lums.items()%}
+        <li>{{ key }}: {{ value }} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

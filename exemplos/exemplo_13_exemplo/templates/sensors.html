@@ -1,0 +1,10 @@
+{% extends"base1.html" %}
+{% block content%}
+    <ul>
+        {% for sensor, number in devices.items() %}
+        <li>{{sensor}}:{{number}}</li>
+
+       
+    {% endfor%}
+    </ul>
+{% endblock%}
